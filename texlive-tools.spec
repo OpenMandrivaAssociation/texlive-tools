@@ -1,4 +1,4 @@
-# revision 24253
+# revision 24788
 # category Package
 # catalog-ctan /macros/latex/required/tools
 # catalog-date 2011-06-29 21:25:12 +0200
@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-tools
 Version:	20110629
-Release:	1
+Release:	2
 Summary:	The LaTeX standard tools bundle
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/required/tools
@@ -18,9 +18,6 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
-Conflicts:	texlive-source <= 20110705-3
 
 %description
 A collection of (variously) simple tools provided as part of
@@ -31,19 +28,19 @@ multicol, rawfonts, showkeys, somedefs, tabularx, theorem,
 trace, varioref, verbatim, xr, and xspace.
 
 %pre
-    %_texmf_mktexlsr_pre
+    %{_sbindir}/texlive.post
 
 %post
-    %_texmf_mktexlsr_post
+    %{_sbindir}/texlive.post
 
 %preun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_pre
+	%{_sbindir}/texlive.post
     fi
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_post
+	%{_sbindir}/texlive.post
     fi
 
 #-----------------------------------------------------------------------
