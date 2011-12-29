@@ -27,16 +27,8 @@ fontsmpl, ftnright, hhline, indentfirst, layout, longtable,
 multicol, rawfonts, showkeys, somedefs, tabularx, theorem,
 trace, varioref, verbatim, xr, and xspace.
 
-%pre
-    %{_sbindir}/texlive.post
-
 %post
     %{_sbindir}/texlive.post
-
-%preun
-    if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-    fi
 
 %postun
     if [ $1 -eq 0 ]; then
@@ -140,7 +132,6 @@ trace, varioref, verbatim, xr, and xspace.
 %doc %{_texmfdistdir}/source/latex/tools/verbatim.dtx
 %doc %{_texmfdistdir}/source/latex/tools/xr.dtx
 %doc %{_texmfdistdir}/source/latex/tools/xspace.dtx
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -151,5 +142,3 @@ trace, varioref, verbatim, xr, and xspace.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
