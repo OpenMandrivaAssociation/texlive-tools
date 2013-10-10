@@ -1,12 +1,12 @@
-# revision 26263
+# revision 29849
 # category Package
 # catalog-ctan /macros/latex/required/tools
-# catalog-date 2011-06-29 21:25:12 +0200
+# catalog-date 2012-06-06 12:15:04 +0200
 # catalog-license lppl
 # catalog-version undef
 Name:		texlive-tools
-Version:	20110629
-Release:	4
+Version:	20120606
+Release:	1
 Summary:	The LaTeX standard tools bundle
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/required/tools
