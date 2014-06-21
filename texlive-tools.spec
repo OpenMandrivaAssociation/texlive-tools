@@ -1,16 +1,16 @@
-# revision 33063
+# revision 34051
 # category Package
 # catalog-ctan /macros/latex/required/tools
-# catalog-date 2012-06-06 12:15:04 +0200
-# catalog-license lppl
+# catalog-date 2014-05-14 23:49:31 +0200
+# catalog-license lppl1.3
 # catalog-version undef
 Name:		texlive-tools
-Version:	20120606
-Release:	8
+Version:	20140514
+Release:	1
 Summary:	The LaTeX standard tools bundle
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/required/tools
-License:	LPPL
+License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/tools.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/tools.doc.tar.xz
 Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/tools.source.tar.xz
@@ -21,11 +21,11 @@ Requires(post):	texlive-kpathsea
 
 %description
 A collection of (variously) simple tools provided as part of
-the LaTeX required tools distribution, comprising: afterpage,
-array, bm, calc, dcolumn, delarray, enumerate, fileerr,
-fontsmpl, ftnright, hhline, indentfirst, layout, longtable,
-multicol, rawfonts, showkeys, somedefs, tabularx, theorem,
-trace, varioref, verbatim, xr, and xspace.
+the LaTeX required tools distribution, comprising the packages:
+afterpage, array, bm, calc, dcolumn, delarray, enumerate,
+fileerr, fontsmpl, ftnright, hhline, indentfirst, layout,
+longtable, multicol, rawfonts, showkeys, somedefs, tabularx,
+theorem, trace, varioref, verbatim, xr, and xspace.
 
 %post
     %{_sbindir}/texlive.post
@@ -76,6 +76,7 @@ trace, varioref, verbatim, xr, and xspace.
 %{_texmfdistdir}/tex/latex/tools/x.tex
 %{_texmfdistdir}/tex/latex/tools/xr.sty
 %{_texmfdistdir}/tex/latex/tools/xspace.sty
+%doc %{_texmfdistdir}/doc/latex/tools/00readme.txt
 %doc %{_texmfdistdir}/doc/latex/tools/afterpage.pdf
 %doc %{_texmfdistdir}/doc/latex/tools/array.pdf
 %doc %{_texmfdistdir}/doc/latex/tools/bm.pdf
@@ -94,7 +95,6 @@ trace, varioref, verbatim, xr, and xspace.
 %doc %{_texmfdistdir}/doc/latex/tools/manifest.txt
 %doc %{_texmfdistdir}/doc/latex/tools/multicol.pdf
 %doc %{_texmfdistdir}/doc/latex/tools/rawfonts.pdf
-%doc %{_texmfdistdir}/doc/latex/tools/readme.txt
 %doc %{_texmfdistdir}/doc/latex/tools/showkeys.pdf
 %doc %{_texmfdistdir}/doc/latex/tools/somedefs.pdf
 %doc %{_texmfdistdir}/doc/latex/tools/tabularx.pdf
@@ -107,8 +107,10 @@ trace, varioref, verbatim, xr, and xspace.
 %doc %{_texmfdistdir}/doc/latex/tools/xspace.pdf
 #- source
 %doc %{_texmfdistdir}/source/latex/tools/afterpage.dtx
+%doc %{_texmfdistdir}/source/latex/tools/afterpage.ins
 %doc %{_texmfdistdir}/source/latex/tools/array.dtx
 %doc %{_texmfdistdir}/source/latex/tools/bm.dtx
+%doc %{_texmfdistdir}/source/latex/tools/bm.ins
 %doc %{_texmfdistdir}/source/latex/tools/calc.dtx
 %doc %{_texmfdistdir}/source/latex/tools/dcolumn.dtx
 %doc %{_texmfdistdir}/source/latex/tools/delarray.dtx
@@ -120,15 +122,19 @@ trace, varioref, verbatim, xr, and xspace.
 %doc %{_texmfdistdir}/source/latex/tools/indentfirst.dtx
 %doc %{_texmfdistdir}/source/latex/tools/layout.dtx
 %doc %{_texmfdistdir}/source/latex/tools/longtable.dtx
+%doc %{_texmfdistdir}/source/latex/tools/longtable.ins
 %doc %{_texmfdistdir}/source/latex/tools/multicol.dtx
+%doc %{_texmfdistdir}/source/latex/tools/multicol.ins
 %doc %{_texmfdistdir}/source/latex/tools/rawfonts.dtx
 %doc %{_texmfdistdir}/source/latex/tools/showkeys.dtx
 %doc %{_texmfdistdir}/source/latex/tools/somedefs.dtx
 %doc %{_texmfdistdir}/source/latex/tools/tabularx.dtx
+%doc %{_texmfdistdir}/source/latex/tools/tabularx.ins
 %doc %{_texmfdistdir}/source/latex/tools/theorem.dtx
 %doc %{_texmfdistdir}/source/latex/tools/tools.ins
 %doc %{_texmfdistdir}/source/latex/tools/trace.dtx
 %doc %{_texmfdistdir}/source/latex/tools/varioref.dtx
+%doc %{_texmfdistdir}/source/latex/tools/varioref.ins
 %doc %{_texmfdistdir}/source/latex/tools/verbatim.dtx
 %doc %{_texmfdistdir}/source/latex/tools/xr.dtx
 %doc %{_texmfdistdir}/source/latex/tools/xspace.dtx
