@@ -1,5 +1,5 @@
 Name:		texlive-tools
-Version:	20170417
+Version:	20180511
 Release:	1
 Summary:	The LaTeX standard tools bundle
 Group:		Publishing
