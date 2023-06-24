@@ -1,6 +1,6 @@
 Name:		texlive-tools
-Version:	64892
-Release:	2
+Version:	67314
+Release:	1
 Summary:	The LaTeX standard tools bundle
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/required/tools
