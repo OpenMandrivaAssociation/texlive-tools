@@ -1,5 +1,5 @@
 Name:		texlive-tools
-Version:	71523
+Version:	72739
 Release:	1
 Summary:	The LaTeX standard tools bundle
 Group:		Publishing
